@@ -1,0 +1,178 @@
+/* #5 */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    background-color: rgb(0, 57, 16);
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav {
+    width: 100%;
+
+}
+
+a {
+    font-size: 30px;
+    color: beige;
+    text-shadow: 2px 2px 2px black;
+    transition-duration: 1s;
+
+}
+
+a:hover {
+    text-shadow: 0 0 20px rgb(245, 5, 245), 0 0 50px rgb(245, 5, 245),
+        0 0 70px rgb(245, 5, 245), 0 0 90px rgb(245, 5, 245);
+}
+
+/* #1 */
+.buttondiv {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    margin-top: 50px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(223, 43, 226);
+}
+
+.button1 {
+    font-size: 60px;
+    border: none;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+    cursor: pointer;
+    letter-spacing: 7px;
+    border-radius: 15px;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 204, 255);
+    box-shadow: 3px 6px 7px 1px rgb(27, 26, 26),
+        3px 3px 6px 0 rgb(244, 238, 238) inset;
+
+}
+
+.button1:active {
+
+    box-shadow: 3px 5px 6px 2px rgb(27, 26, 26) inset,
+        -3px -3px 7px 0 whitesmoke inset;
+
+}
+
+/* #2 */
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 80px;
+    /* background-color: chocolate; */
+}
+
+.ronniecard {
+    padding: 20px;
+    transition-duration: 1s;
+    /* border-radius: ; */
+}
+
+.ronnie {
+    height: 350px;
+    width: 350px;
+    transition-duration: 1s;
+}
+
+h2 {
+    color: rgb(10, 2, 7);
+    font-size: 30px;
+    ;
+
+    text-align: center;
+    padding-top: 15px;
+}
+
+.ronniecard:hover {
+    border-radius: 30px;
+    box-shadow: 6px 6px 18px 0 rgb(254, 1, 1), -5px -5px 15px 0 rgb(254, 1, 1);
+}
+
+/* #3 */
+
+.animatedtxt {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.animatedp {
+    font-size: 140px;
+    color: red;
+    animation: flashing 0.5s infinite;
+
+}
+
+@keyframes flashing {
+    0% {
+        text-shadow: 0 0 0 red;
+    }
+
+    25% {
+        text-shadow: 0 0 15px red;
+    }
+
+    50% {
+        text-shadow: 0 0 35px red;
+    }
+
+    85% {
+        text-shadow: 0 0 55px red;
+    }
+
+    100% {
+        text-shadow: 0 0 75px red;
+    }
+}
+
+/* #6 */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.loadingp {
+    font-size: 25px;
+    letter-spacing: 3px;
+    position: absolute;
+}
+
+.loader {
+    
+    height: 100%;
+    border-radius: 30px;
+    animation: loading 5s linear both;
+    position: absolute;
+    
+}
+
+.loading_box {
+    height: 50px;
+    width: 1000px;
+    border: solid 1px rgb(1, 1, 1);
+    border-radius: 30px;
+    position: relative;
+}
+@keyframes loading {
+    0% {
+      width: 0%;
+      background-color: white;
+    }
+    100% {
+      width: 100%;
+      background-color: red;
+    }
+  }
